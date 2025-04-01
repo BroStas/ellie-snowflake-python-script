@@ -1,0 +1,25 @@
+snowflake:
+  # Standard connection settings - can use account ID or full URL
+  account: 'your-account-id.eu-west-1.aws'  # Example: nn73358.eu-north-1.aws
+  # OR you can use a full URL:
+  # account: 'https://your-account-id.eu-west-1.aws.snowflakecomputing.com'
+  
+  user: 'your_username'
+  password: 'your_password'  # Never commit actual passwords
+  warehouse: 'COMPUTE_WH'
+  database: 'your_database'
+  role: 'your_role'
+  
+  # Connection mode: 'standard' or 'privatelink'
+  connection_mode: 'standard'
+  
+  # For privatelink connections, specify a custom URL
+  # Uncomment and configure if using privatelink mode
+  # connection_mode: 'privatelink'
+  # custom_url: 'your-account-privatelink.snowflakecomputing.com'
+
+ellie:
+  organization: 'https://your-org.ellie.ai'
+  token: 'your_api_token'  # Never commit actual tokens
+  api_version: 'v1'
+  folder_id: '12345'  # ID of the folder where models will be created 
